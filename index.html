@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel='preconnect' href='https://fonts.gstatic.com'>
+  <link href='https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;500;700&display=swap' rel='stylesheet'>
+  <link rel='stylesheet' href='css/amc.css'>
+  <script src='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.js'></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.css' rel='stylesheet' />
+  <link rel='stylesheet' href='css/style.css'>
+  <title>Frontend Mentor | IP Address Tracker</title>
+</head>
+<body>
+  <header class="header pt-2 pb-10 pb-lg-5">
+    <article class="container">
+      <section class="header-title">
+        <h2 class="text-white-1 text-center">IP Address Tracker</h2>
+      </section> <!-- TITLE -->
+      <section class="form-header mt-2">
+        <form class="form" method="post">
+          <div class="ip-address flex">
+            <input class="p-1" placeholder="Ingresa una dirección IP para rastrar..." type="text" name="ip" id="ip" autocomplete="off">
+            <div data-id="img" class="image">
+              <input data-id="img" class="p-1" type="submit" value="">
+              <img data-id="img" src="images/icon-arrow.svg" alt="Arrow Image">
+            </div> <!-- SUBMIT -->
+          </div> <!-- INPUT -->
+        </form> <!-- FORM -->
+      </section> <!-- HEADER FORM -->
+      <section class="ip-info bg-white-1 py-1 py-lg-3 w-80 mx-auto">
+        <h2 class="text-center">Aquí se mostrará la información</h2>
+      </section>
+    </article>
+  </header> <!-- HEADER -->
+  <div id='map'></div>
+  <div class="attribution py-1 text-center">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. <br>
+    Coded by <a href="#">Richard Crespo</a>.
+  </div>
+  <script src="js/script.js"></script>
+</body>
+</html>

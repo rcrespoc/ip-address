@@ -1,0 +1,104 @@
+:root{
+  --very-dark-gray: hsl(0, 0%, 17%);
+  --dark-gray: hsl(0, 0%, 59%);
+}
+html{
+  font-family: 'Raleway', sans-serif;
+}
+
+/* -------------------- ESTILOS -------------------- */
+.header{
+  background-image: url(../images/pattern-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+#map{ 
+  height: calc(100vh - 23.4rem);
+}
+@media screen and (min-width: 68rem){
+  #map{
+    height: calc(100vh - 18.4rem);
+  }
+}
+
+/* -------------------- FORM -------------------- */
+.ip-address > input[type="text"]{
+  flex: 1;
+  border-radius: 10px 0 0 10px;
+  border: none;
+}
+.image{
+  position: relative;
+}
+.image,
+.image > input[type="submit"],
+image img{
+  cursor: pointer;
+}
+.image > input[type="submit"]{
+  background-color: black;
+  border: none;
+  border-radius: 0 10px 10px 0;
+  width: 3rem;
+  height: 100%;
+}
+.image > input[type="submit"]:hover{
+  opacity: .7;
+}
+.image > img{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 10px;
+  height: 15px;
+}
+@media screen and (min-width: 68rem){
+  .ip-address{
+    justify-content: center;
+  }
+  .ip-address > input[type="text"]{
+    flex: 0;
+    flex-basis: 50%;
+  }
+}
+/* -------------------- IP INFO -------------------- */
+.ip-info{
+  position: absolute;
+  top: 10rem;
+  right: 0;
+  left: 0;
+  border-radius: 20px;
+  z-index: 999;
+}
+@media screen and (min-width: 68rem){
+  .ip-info > .container{
+    display: flex;
+  }
+  .ip-info > .container > section{
+    border-left: thin solid var(--dark-gray);
+    margin-left: 1rem;
+    padding-left: 1rem;
+  }
+  .ip-info > .container > section:first-child{
+    border-left: none;
+    margin-left: 0;
+    padding-left: 0;
+  }
+}
+@media screen and (min-width: 85rem){
+  .ip-info > .container{
+    justify-content: space-evenly;
+  }
+  .ip-info > .container > section{
+    padding-left: 3rem;
+  }
+}
+
+/* -------------------- ATTRIBUTION -------------------- */
+.attribution{
+  background-color: var(--very-dark-gray);
+}
